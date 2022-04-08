@@ -28,9 +28,9 @@ module.exports = {
   /**
    * Agent build extension
    */
-  nrTag: "\n// NEWRELIC ADDED\n" 
+  nrTag: "\n// NEWRELIC ADDED\n"
     + "buildscript {\n\tdependencies {\n\t\tclasspath 'com.newrelic.agent.android:agent-gradle-plugin:{AGENT_VER}'\n\t}\n}\n"
-    + "dependencies {\n\tcompile ('com.newrelic.agent.android:android-agent:{AGENT_VER}')\n}\n"
+    + "dependencies {\n\implementation 'com.newrelic.agent.android:android-agent:{AGENT_VER}'\n}\n"
     + "{PLUGIN}"
     + "// NEWRELIC ADDED\n",
 
